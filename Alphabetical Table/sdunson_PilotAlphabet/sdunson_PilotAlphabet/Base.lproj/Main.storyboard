@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24128" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24063"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="sdunson_PilotAlphabet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.55000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="airplane.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="KBg-Bd-Mjv">
+                                <rect key="frame" x="0.0" y="118" width="393" height="666"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a letter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TiK-2H-dpz">
+                                <rect key="frame" x="0.0" y="148" width="393" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="c2P-7b-b6B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alpha" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFG-ch-nrT">
+                                <rect key="frame" x="0.0" y="396" width="393" height="60"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="A" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LOR-Tb-27c">
+                                <rect key="frame" x="151.66666666666666" y="223" width="90" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="OqB-jr-A2k"/>
+                                    <constraint firstAttribute="width" constant="90" id="W8B-QB-9Hd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.18606253703517048" green="0.37307872109620505" blue="0.53751399587938142" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="TiK-2H-dpz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="4sW-n2-vWo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TiK-2H-dpz" secondAttribute="trailing" id="O0V-zq-lrk"/>
+                            <constraint firstItem="LOR-Tb-27c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QTf-CZ-KDd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KBg-Bd-Mjv" secondAttribute="trailing" id="baD-5i-CTT"/>
+                            <constraint firstItem="KBg-Bd-Mjv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eDm-j4-wcd"/>
+                            <constraint firstItem="LOR-Tb-27c" firstAttribute="top" secondItem="TiK-2H-dpz" secondAttribute="bottom" constant="25" id="fuj-nb-qH5"/>
+                            <constraint firstItem="hFG-ch-nrT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="guL-hc-AFW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KBg-Bd-Mjv" secondAttribute="bottom" id="ipa-ic-5QL"/>
+                            <constraint firstItem="TiK-2H-dpz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jmU-Ot-tVX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hFG-ch-nrT" secondAttribute="trailing" id="lqv-e7-P9H"/>
+                            <constraint firstItem="KBg-Bd-Mjv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="sLK-fX-QVS"/>
+                            <constraint firstItem="hFG-ch-nrT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wtr-Ys-d8f"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="alphabetOutlet" destination="hFG-ch-nrT" id="uaz-0G-x5v"/>
+                        <outlet property="inputOutlet" destination="LOR-Tb-27c" id="07i-OW-12O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.1679389312977" y="130.98591549295776"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="airplane.jpeg" width="1000" height="1619"/>
+    </resources>
+</document>

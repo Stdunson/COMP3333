@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24128" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BwI-SS-INT">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24063"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Snapchat-->
+        <scene sceneID="OJg-rS-Tgw">
+            <objects>
+                <viewController id="LuH-MX-unI" customClass="SnapchatViewController" customModule="sdunson_SMC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IKb-Va-uEP">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ENg-QV-cO8">
+                                <rect key="frame" x="0.0" y="118" width="393" height="617"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Atf-bS-Dp4"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <color key="tintColor" systemColor="tintColor"/>
+                        <constraints>
+                            <constraint firstItem="ENg-QV-cO8" firstAttribute="leading" secondItem="Atf-bS-Dp4" secondAttribute="leading" id="9Bi-Jd-Osh"/>
+                            <constraint firstItem="ENg-QV-cO8" firstAttribute="trailing" secondItem="Atf-bS-Dp4" secondAttribute="trailing" id="LIh-qh-74f"/>
+                            <constraint firstItem="ENg-QV-cO8" firstAttribute="top" secondItem="Atf-bS-Dp4" secondAttribute="top" id="gRK-bd-lSc"/>
+                            <constraint firstItem="ENg-QV-cO8" firstAttribute="bottom" secondItem="Atf-bS-Dp4" secondAttribute="bottom" id="qrG-yS-X9v"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Snapchat" image="snapshat.png" id="L81-yL-kBb"/>
+                    <connections>
+                        <outlet property="snapWebView" destination="ENg-QV-cO8" id="s7V-lh-ril"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uo7-JQ-YHf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1686" y="208"/>
+        </scene>
+        <!--Facebook-->
+        <scene sceneID="cZ4-LK-vdH">
+            <objects>
+                <viewController id="AaI-gJ-Z1f" customClass="FacebookViewController" customModule="sdunson_SMC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gd8-11-2pu">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5gE-tk-OvC">
+                                <rect key="frame" x="0.0" y="118" width="393" height="617"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8Yq-Fs-4gL"/>
+                        <color key="backgroundColor" red="0.10755420929999999" green="0.1427097722" blue="0.63456427189999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="8Yq-Fs-4gL" firstAttribute="trailing" secondItem="5gE-tk-OvC" secondAttribute="trailing" id="A0I-Vg-lby"/>
+                            <constraint firstItem="8Yq-Fs-4gL" firstAttribute="bottom" secondItem="5gE-tk-OvC" secondAttribute="bottom" id="NF6-53-m8C"/>
+                            <constraint firstItem="5gE-tk-OvC" firstAttribute="top" secondItem="8Yq-Fs-4gL" secondAttribute="top" id="eAr-Eg-55e"/>
+                            <constraint firstItem="5gE-tk-OvC" firstAttribute="leading" secondItem="8Yq-Fs-4gL" secondAttribute="leading" id="qIY-6y-0q1"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Facebook" image="FB.png" id="SlT-y5-t7R"/>
+                    <connections>
+                        <outlet property="fbWebView" destination="5gE-tk-OvC" id="sAL-sS-vXE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qox-IM-UwT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="962.59541984732823" y="207.74647887323945"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="gDA-es-kXS">
+            <objects>
+                <tabBarController id="BwI-SS-INT" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="J71-6D-CNl">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" systemColor="tintColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="AaI-gJ-Z1f" kind="relationship" relationship="viewControllers" id="Zpa-hQ-Epg"/>
+                        <segue destination="LuH-MX-unI" kind="relationship" relationship="viewControllers" id="tnK-Hh-st0"/>
+                        <segue destination="37G-SY-b3J" kind="relationship" relationship="viewControllers" id="p5k-lV-IKb"/>
+                        <segue destination="zcM-5R-N6w" kind="relationship" relationship="viewControllers" id="9li-49-J3u"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h0f-i8-cD1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-111" y="537"/>
+        </scene>
+        <!--Instagram-->
+        <scene sceneID="p1Y-OI-w6o">
+            <objects>
+                <viewController id="37G-SY-b3J" customClass="InstagramViewController" customModule="sdunson_SMC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fdX-8a-RBj">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X1z-4s-L4u">
+                                <rect key="frame" x="0.0" y="118" width="393" height="617"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0Na-gp-Kox"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <constraints>
+                            <constraint firstItem="X1z-4s-L4u" firstAttribute="bottom" secondItem="0Na-gp-Kox" secondAttribute="bottom" id="QD9-f2-EMe"/>
+                            <constraint firstItem="X1z-4s-L4u" firstAttribute="trailing" secondItem="0Na-gp-Kox" secondAttribute="trailing" id="fpB-SP-Q6K"/>
+                            <constraint firstItem="X1z-4s-L4u" firstAttribute="leading" secondItem="0Na-gp-Kox" secondAttribute="leading" id="tlJ-El-mML"/>
+                            <constraint firstItem="X1z-4s-L4u" firstAttribute="top" secondItem="0Na-gp-Kox" secondAttribute="top" id="wyJ-sD-M0j"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Instagram" image="instagram.png" id="BkJ-lI-vPr"/>
+                    <connections>
+                        <outlet property="igWebView" destination="X1z-4s-L4u" id="rlw-ot-bP3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="laI-e0-Al8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2428" y="208"/>
+        </scene>
+        <!--Item 4-->
+        <scene sceneID="QXi-gN-4hA">
+            <objects>
+                <viewController id="zcM-5R-N6w" userLabel="Item 4" customClass="LinkedInViewController" customModule="sdunson_SMC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W16-ho-hdr">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NfU-BP-4p7">
+                                <rect key="frame" x="0.0" y="118" width="393" height="617"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YxH-BH-1V4"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <constraints>
+                            <constraint firstItem="NfU-BP-4p7" firstAttribute="top" secondItem="YxH-BH-1V4" secondAttribute="top" id="G3K-Qo-S6f"/>
+                            <constraint firstItem="NfU-BP-4p7" firstAttribute="leading" secondItem="YxH-BH-1V4" secondAttribute="leading" id="GeY-0Q-c7M"/>
+                            <constraint firstItem="NfU-BP-4p7" firstAttribute="bottom" secondItem="YxH-BH-1V4" secondAttribute="bottom" id="YRA-hv-uij"/>
+                            <constraint firstItem="NfU-BP-4p7" firstAttribute="trailing" secondItem="YxH-BH-1V4" secondAttribute="trailing" id="edR-2s-BpC"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="LinkedIn" image="LinkedIn.png" id="54i-ob-rhN"/>
+                    <connections>
+                        <outlet property="linkedinWebView" destination="NfU-BP-4p7" id="35d-ba-G1O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kV7-VX-OnZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3147" y="208"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="FB.png" width="2.4827585220336914" height="2.4827585220336914"/>
+        <image name="LinkedIn.png" width="32" height="32"/>
+        <image name="instagram.png" width="32" height="32"/>
+        <image name="snapshat.png" width="32" height="32"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.53333333333333333" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.79607843137254897" green="0.18823529411764706" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.53333333333333333" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
