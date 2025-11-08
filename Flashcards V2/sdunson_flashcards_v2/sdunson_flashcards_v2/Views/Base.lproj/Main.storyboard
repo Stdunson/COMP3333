@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24128" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qdm-aY-Wep">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24063"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Cards-->
+        <scene sceneID="Kct-Te-O9B">
+            <objects>
+                <viewController title="Add Cards" id="Ide-Tc-Iea" customClass="AddViewController" customModule="sdunson_flashcards_v2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FWa-0T-L5G">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WJM-O7-IdX">
+                                <rect key="frame" x="15" y="123" width="363" height="301"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BA9-Pz-WGs">
+                                        <rect key="frame" x="5" y="123" width="353" height="34"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Question" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vvN-4c-m1S">
+                                        <rect key="frame" x="10" y="54" width="343" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVA-gP-spA">
+                                        <rect key="frame" x="5" y="15" width="353" height="34"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Answer" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hc2-7W-Itv">
+                                        <rect key="frame" x="10" y="202" width="343" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Hc2-7W-Itv" secondAttribute="trailing" constant="10" id="7TM-Xj-VB0"/>
+                                    <constraint firstItem="BA9-Pz-WGs" firstAttribute="leading" secondItem="WJM-O7-IdX" secondAttribute="leading" constant="5" id="CaB-Bc-vIw"/>
+                                    <constraint firstItem="vvN-4c-m1S" firstAttribute="top" secondItem="DVA-gP-spA" secondAttribute="bottom" constant="5" id="FOr-QX-jHn"/>
+                                    <constraint firstItem="Hc2-7W-Itv" firstAttribute="top" secondItem="BA9-Pz-WGs" secondAttribute="bottom" constant="45" id="J9q-a2-pfP"/>
+                                    <constraint firstAttribute="trailing" secondItem="BA9-Pz-WGs" secondAttribute="trailing" constant="5" id="Oda-Vi-i3n"/>
+                                    <constraint firstItem="vvN-4c-m1S" firstAttribute="leading" secondItem="WJM-O7-IdX" secondAttribute="leading" constant="10" id="RzI-SW-djo"/>
+                                    <constraint firstItem="DVA-gP-spA" firstAttribute="leading" secondItem="WJM-O7-IdX" secondAttribute="leading" constant="5" id="g2D-d0-Ac3"/>
+                                    <constraint firstAttribute="trailing" secondItem="vvN-4c-m1S" secondAttribute="trailing" constant="10" id="ihY-SS-jxf"/>
+                                    <constraint firstItem="BA9-Pz-WGs" firstAttribute="top" secondItem="vvN-4c-m1S" secondAttribute="bottom" constant="35" id="jFm-m5-MWQ"/>
+                                    <constraint firstItem="DVA-gP-spA" firstAttribute="top" secondItem="WJM-O7-IdX" secondAttribute="top" constant="15" id="jPh-d7-Y5J"/>
+                                    <constraint firstAttribute="trailing" secondItem="DVA-gP-spA" secondAttribute="trailing" constant="5" id="kuS-Kd-cHx"/>
+                                    <constraint firstAttribute="bottom" secondItem="Hc2-7W-Itv" secondAttribute="bottom" constant="65" id="zIb-GO-KyL"/>
+                                    <constraint firstItem="Hc2-7W-Itv" firstAttribute="leading" secondItem="WJM-O7-IdX" secondAttribute="leading" constant="10" id="zSc-O3-iSL"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PeY-LA-z1W">
+                                <rect key="frame" x="110" y="434" width="173" height="39.666666666666686"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Add Question">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="ChalkboardSE-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="addQuestion:" destination="Ide-Tc-Iea" eventType="touchUpInside" id="85S-IH-7O9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jWf-zF-66m"/>
+                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                        <constraints>
+                            <constraint firstItem="PeY-LA-z1W" firstAttribute="leading" secondItem="jWf-zF-66m" secondAttribute="leading" constant="110" id="AYR-19-rnf"/>
+                            <constraint firstItem="jWf-zF-66m" firstAttribute="trailing" secondItem="WJM-O7-IdX" secondAttribute="trailing" constant="15" id="H1v-VD-HfI"/>
+                            <constraint firstItem="WJM-O7-IdX" firstAttribute="top" secondItem="jWf-zF-66m" secondAttribute="top" constant="5" id="I3A-hf-4rL"/>
+                            <constraint firstItem="jWf-zF-66m" firstAttribute="trailing" secondItem="PeY-LA-z1W" secondAttribute="trailing" constant="110" id="YCv-7T-SJc"/>
+                            <constraint firstItem="WJM-O7-IdX" firstAttribute="leading" secondItem="jWf-zF-66m" secondAttribute="leading" constant="15" id="dRA-0W-TCV"/>
+                            <constraint firstItem="PeY-LA-z1W" firstAttribute="top" secondItem="WJM-O7-IdX" secondAttribute="bottom" constant="10" id="uhi-lU-StO"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Add Cards" image="plus.rectangle" catalog="system" id="l9Q-Sx-H3l"/>
+                    <connections>
+                        <outlet property="newAnswer" destination="Hc2-7W-Itv" id="ycG-99-kuF"/>
+                        <outlet property="newQuestion" destination="vvN-4c-m1S" id="3ll-Pt-ZKW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vz4-fr-URM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="510.68702290076334" y="645.77464788732402"/>
+        </scene>
+        <!--View Cards-->
+        <scene sceneID="kyL-Hj-vnT">
+            <objects>
+                <viewController title="View Cards" id="5GO-4E-dhI" customClass="CardsViewController" customModule="sdunson_flashcards_v2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xpb-xh-g6C">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h6q-Q1-uZz">
+                                <rect key="frame" x="15" y="133" width="363" height="444"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Question Found" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="az5-Az-Cmh">
+                                        <rect key="frame" x="5" y="5" width="353" height="175"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="175" id="b6U-Yb-Ibw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Question Found" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWc-8G-KBt">
+                                        <rect key="frame" x="5" y="329" width="353" height="110"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="110" id="N6Y-FJ-kUX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="32"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z5X-fT-se6">
+                                        <rect key="frame" x="5" y="285" width="353" height="34"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="oWc-8G-KBt" secondAttribute="trailing" constant="5" id="4fC-L6-CWT"/>
+                                    <constraint firstAttribute="trailing" secondItem="az5-Az-Cmh" secondAttribute="trailing" constant="5" id="DA3-Xc-6B0"/>
+                                    <constraint firstItem="az5-Az-Cmh" firstAttribute="leading" secondItem="h6q-Q1-uZz" secondAttribute="leading" constant="5" id="Koh-wS-Q0i"/>
+                                    <constraint firstItem="oWc-8G-KBt" firstAttribute="top" secondItem="Z5X-fT-se6" secondAttribute="bottom" constant="10" id="b5k-Bq-FvZ"/>
+                                    <constraint firstItem="Z5X-fT-se6" firstAttribute="top" secondItem="az5-Az-Cmh" secondAttribute="bottom" constant="105" id="cfc-vX-h0h"/>
+                                    <constraint firstItem="az5-Az-Cmh" firstAttribute="top" secondItem="h6q-Q1-uZz" secondAttribute="top" constant="5" id="k8Y-MI-TTC"/>
+                                    <constraint firstItem="oWc-8G-KBt" firstAttribute="leading" secondItem="h6q-Q1-uZz" secondAttribute="leading" constant="5" id="l50-HS-kGz"/>
+                                    <constraint firstAttribute="trailing" secondItem="Z5X-fT-se6" secondAttribute="trailing" constant="5" id="nce-RI-lBE"/>
+                                    <constraint firstAttribute="bottom" secondItem="oWc-8G-KBt" secondAttribute="bottom" constant="5" id="sKd-Cg-JV6"/>
+                                    <constraint firstItem="Z5X-fT-se6" firstAttribute="leading" secondItem="h6q-Q1-uZz" secondAttribute="leading" constant="5" id="xaV-ks-SY1"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zd8-Wo-F3W">
+                                <rect key="frame" x="115" y="651.66666666666663" width="163" height="39.666666666666629"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Show Answer">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="ChalkboardSE-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="showAnswer:" destination="5GO-4E-dhI" eventType="touchUpInside" id="b5s-2t-YVX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKL-PH-91d">
+                                <rect key="frame" x="210" y="597" width="158" height="39.666666666666629"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Next Question">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="ChalkboardSE-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="nextQuestion:" destination="5GO-4E-dhI" eventType="touchUpInside" id="oWK-iQ-EFb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V6R-DP-6ur">
+                                <rect key="frame" x="25" y="597" width="158" height="39.666666666666629"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Delete Question">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="ChalkboardSE-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="deleteQuestion:" destination="5GO-4E-dhI" eventType="touchUpInside" id="WxS-8R-Jia"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hGA-gZ-u2M"/>
+                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                        <constraints>
+                            <constraint firstItem="Zd8-Wo-F3W" firstAttribute="top" secondItem="V6R-DP-6ur" secondAttribute="bottom" constant="15" id="8qX-XY-tRe"/>
+                            <constraint firstItem="oKL-PH-91d" firstAttribute="centerX" secondItem="xpb-xh-g6C" secondAttribute="centerX" constant="92.5" id="8wr-4a-6ut"/>
+                            <constraint firstItem="Zd8-Wo-F3W" firstAttribute="leading" secondItem="hGA-gZ-u2M" secondAttribute="leading" constant="115" id="FAq-Pj-doy"/>
+                            <constraint firstItem="hGA-gZ-u2M" firstAttribute="trailing" secondItem="oKL-PH-91d" secondAttribute="trailing" constant="25" id="GG8-f9-Xda"/>
+                            <constraint firstItem="hGA-gZ-u2M" firstAttribute="trailing" secondItem="Zd8-Wo-F3W" secondAttribute="trailing" constant="115" id="HLv-ha-k8g"/>
+                            <constraint firstItem="h6q-Q1-uZz" firstAttribute="top" secondItem="hGA-gZ-u2M" secondAttribute="top" constant="15" id="SWM-yr-TdZ"/>
+                            <constraint firstItem="Zd8-Wo-F3W" firstAttribute="top" secondItem="oKL-PH-91d" secondAttribute="bottom" constant="15" id="TGz-5h-XhF"/>
+                            <constraint firstItem="hGA-gZ-u2M" firstAttribute="trailing" secondItem="h6q-Q1-uZz" secondAttribute="trailing" constant="15" id="bsW-Sv-DZ0"/>
+                            <constraint firstItem="oKL-PH-91d" firstAttribute="top" secondItem="h6q-Q1-uZz" secondAttribute="bottom" constant="20" id="cdZ-HJ-6dd"/>
+                            <constraint firstItem="h6q-Q1-uZz" firstAttribute="leading" secondItem="hGA-gZ-u2M" secondAttribute="leading" constant="15" id="frQ-Yw-r3E"/>
+                            <constraint firstItem="V6R-DP-6ur" firstAttribute="centerX" secondItem="xpb-xh-g6C" secondAttribute="centerX" constant="-92.5" id="hh8-TU-HlJ"/>
+                            <constraint firstItem="V6R-DP-6ur" firstAttribute="leading" secondItem="hGA-gZ-u2M" secondAttribute="leading" constant="25" id="kGk-p1-0jw"/>
+                            <constraint firstItem="V6R-DP-6ur" firstAttribute="top" secondItem="h6q-Q1-uZz" secondAttribute="bottom" constant="20" id="mqf-Fu-jfT"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="View Cards" image="eye" catalog="system" id="0mx-Va-krc"/>
+                    <connections>
+                        <outlet property="answerLabel" destination="oWc-8G-KBt" id="uUV-Ly-G0Y"/>
+                        <outlet property="questionLabel" destination="az5-Az-Cmh" id="5Yr-87-cfD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DUG-nC-Lfi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-237.40458015267174" y="645.77464788732402"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="guJ-hw-Dd8">
+            <objects>
+                <tabBarController id="qdm-aY-Wep" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="znB-As-KrS">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" systemColor="systemIndigoColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="5GO-4E-dhI" kind="relationship" relationship="viewControllers" id="IK3-vX-E7t"/>
+                        <segue destination="Ide-Tc-Iea" kind="relationship" relationship="viewControllers" id="LVG-VV-kLU"/>
+                        <segue destination="hWe-X7-9qq" kind="relationship" relationship="viewControllers" id="Ykw-pX-NHt"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lOj-eg-0lU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-967" y="646"/>
+        </scene>
+        <!--Info-->
+        <scene sceneID="5q6-e6-EOq">
+            <objects>
+                <viewController title="Info" id="hWe-X7-9qq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Owh-8c-raD">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to use the Flashcards App:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBm-Sz-gSV">
+                                <rect key="frame" x="0.0" y="155" width="393" height="85"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPS-sL-yuG">
+                                <rect key="frame" x="5" y="393.33333333333331" width="383" height="226.33333333333331"/>
+                                <string key="text">You might notice a lack of cards to start. To add them, go to the “Add Cards” view, type in your question and answer, then click “Add Question”. That card will now be added, and you can click “Next Question” in the “View Cards” tab to see it. If you ever need to get rid of a card, simply click “Delete Question”.</string>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxA-Mo-mcU">
+                                <rect key="frame" x="5" y="260" width="383" height="113.33333333333331"/>
+                                <string key="text">In the "View Cards" Tab, Scroll through all your cards with the "next question" button and show the answer to any card with the "Show Answer" button.</string>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XdQ-5N-KLK"/>
+                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                        <constraints>
+                            <constraint firstItem="rPS-sL-yuG" firstAttribute="top" secondItem="mxA-Mo-mcU" secondAttribute="bottom" constant="20" id="F10-WS-r7Y"/>
+                            <constraint firstItem="XdQ-5N-KLK" firstAttribute="trailing" secondItem="sBm-Sz-gSV" secondAttribute="trailing" id="IdM-Ta-Ggp"/>
+                            <constraint firstItem="sBm-Sz-gSV" firstAttribute="top" secondItem="Owh-8c-raD" secondAttribute="top" constant="155" id="Ps5-Kb-ZqY"/>
+                            <constraint firstItem="XdQ-5N-KLK" firstAttribute="trailing" secondItem="rPS-sL-yuG" secondAttribute="trailing" constant="5" id="QLS-ZN-IYW"/>
+                            <constraint firstItem="sBm-Sz-gSV" firstAttribute="leading" secondItem="XdQ-5N-KLK" secondAttribute="leading" id="SP3-l9-056"/>
+                            <constraint firstItem="XdQ-5N-KLK" firstAttribute="trailing" secondItem="mxA-Mo-mcU" secondAttribute="trailing" constant="5" id="gYm-WA-jCh"/>
+                            <constraint firstItem="mxA-Mo-mcU" firstAttribute="leading" secondItem="XdQ-5N-KLK" secondAttribute="leading" constant="5" id="jQp-5E-RSG"/>
+                            <constraint firstItem="mxA-Mo-mcU" firstAttribute="top" secondItem="sBm-Sz-gSV" secondAttribute="bottom" constant="20" id="n2g-YR-EjV"/>
+                            <constraint firstItem="rPS-sL-yuG" firstAttribute="leading" secondItem="XdQ-5N-KLK" secondAttribute="leading" constant="5" id="ywG-OC-Lbi"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Info" image="newspaper" catalog="system" id="sWi-gC-eng"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gmv-LR-mIv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1278.6259541984732" y="645.77464788732402"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="eye" catalog="system" width="128" height="79"/>
+        <image name="newspaper" catalog="system" width="128" height="111"/>
+        <image name="plus.rectangle" catalog="system" width="128" height="93"/>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.38039215686274508" green="0.33333333333333331" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.78431372549019607" blue="0.70196078431372544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
