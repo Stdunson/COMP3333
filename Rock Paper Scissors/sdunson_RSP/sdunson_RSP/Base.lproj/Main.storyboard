@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24412" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24405"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="sdunson_RSP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🤖" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SAM-tk-vWT">
+                                <rect key="frame" x="106.66666666666669" y="118" width="180" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="3Ht-K8-yvT"/>
+                                    <constraint firstAttribute="width" constant="180" id="IUM-Y0-hWC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="132"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rock Paper Scissors? Select One Below" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7f-dv-aSS">
+                                <rect key="frame" x="0.0" y="298" width="393" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="115" id="vJs-vM-OYD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2qw-WN-hnP">
+                                <rect key="frame" x="151.66666666666666" y="433" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="Q4N-rj-Lv8"/>
+                                    <constraint firstAttribute="width" constant="90" id="soJ-hs-4zr"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="📄">
+                                            <attributes>
+                                                <font key="NSFont" size="51" name=".AppleColorEmojiUI"/>
+                                                <font key="NSOriginalFont" metaFont="system" size="51"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="paperButtonSelect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b3m-Ai-ifb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J76-BP-k22">
+                                <rect key="frame" x="261.66666666666669" y="433" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="dQw-1F-zpD"/>
+                                    <constraint firstAttribute="width" constant="90" id="ph1-dt-riH"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="✂️">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="51"/>
+                                                <font key="NSOriginalFont" metaFont="system" size="51"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="scissorsButtonSelect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zsO-eC-Kcs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sgd-Qz-EVd">
+                                <rect key="frame" x="106.66666666666669" y="563" width="180" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="fJ7-Nn-trd"/>
+                                    <constraint firstAttribute="height" constant="40" id="hRO-DB-xcM"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Play Again?"/>
+                                <connections>
+                                    <action selector="playAgainButtonSelect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ksc-oO-qP8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0-0-0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MfX-LW-Zyo">
+                                <rect key="frame" x="0.0" y="730" width="393" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qvm-JU-VbN">
+                                <rect key="frame" x="41.666666666666657" y="433" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="1s8-2U-bgO"/>
+                                    <constraint firstAttribute="height" constant="90" id="Q62-bV-EpH"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="🪨">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="51"/>
+                                                <font key="NSOriginalFont" metaFont="system" size="51"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="rockButtonSelect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pex-9E-PfA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="J76-BP-k22" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="110" id="HGD-yu-M0h"/>
+                            <constraint firstItem="Sgd-Qz-EVd" firstAttribute="top" secondItem="2qw-WN-hnP" secondAttribute="bottom" constant="40" id="HrQ-dS-6hx"/>
+                            <constraint firstItem="2qw-WN-hnP" firstAttribute="top" secondItem="R7f-dv-aSS" secondAttribute="bottom" constant="20" id="IAX-Ck-GI6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MfX-LW-Zyo" secondAttribute="trailing" id="Npu-25-Fy3"/>
+                            <constraint firstItem="J76-BP-k22" firstAttribute="top" secondItem="R7f-dv-aSS" secondAttribute="bottom" constant="20" id="O1D-F0-w47"/>
+                            <constraint firstItem="qvm-JU-VbN" firstAttribute="top" secondItem="R7f-dv-aSS" secondAttribute="bottom" constant="20" id="SD8-dH-Acu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MfX-LW-Zyo" secondAttribute="bottom" constant="30" id="X6V-Mp-sLI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="R7f-dv-aSS" secondAttribute="trailing" id="bLM-s3-EQt"/>
+                            <constraint firstItem="R7f-dv-aSS" firstAttribute="top" secondItem="SAM-tk-vWT" secondAttribute="bottom" id="dkO-SS-7np"/>
+                            <constraint firstItem="R7f-dv-aSS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fpv-Li-y0t"/>
+                            <constraint firstItem="MfX-LW-Zyo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="p1F-3t-Vap"/>
+                            <constraint firstItem="SAM-tk-vWT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="v5k-ft-rey"/>
+                            <constraint firstItem="SAM-tk-vWT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vnt-cf-xUP"/>
+                            <constraint firstItem="Sgd-Qz-EVd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wVr-sJ-poM"/>
+                            <constraint firstItem="2qw-WN-hnP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yTt-9z-mma"/>
+                            <constraint firstItem="qvm-JU-VbN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-110" id="zFW-Qe-fCm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cpuLabel" destination="SAM-tk-vWT" id="pWj-Dv-ZXz"/>
+                        <outlet property="gameMessageLabel" destination="R7f-dv-aSS" id="zyI-pD-WCy"/>
+                        <outlet property="paperButton" destination="2qw-WN-hnP" id="hIA-Qv-PKY"/>
+                        <outlet property="playAgainButton" destination="Sgd-Qz-EVd" id="KDo-2Z-ASh"/>
+                        <outlet property="rockButton" destination="qvm-JU-VbN" id="NB1-hn-bxl"/>
+                        <outlet property="scissorsButton" destination="J76-BP-k22" id="gfP-TP-fG0"/>
+                        <outlet property="scoreLabel" destination="MfX-LW-Zyo" id="Cq9-q0-2X4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20.610687022900763" y="117.60563380281691"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
